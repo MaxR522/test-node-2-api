@@ -1,0 +1,58 @@
+{
+  "name": "test-node-2-api",
+  "version": "1.0.0",
+  "description": "a small api made with node.ts/express.ts",
+  "main": "dist",
+  "scripts": {
+    "start": "NODE_ENV=production npm start dist",
+    "test": "NODE_ENV=test **test script goes here**",
+    "build": "tsc --project ./tsconfig.json",
+    "dev": "tsc --project ./tsconfig.json --watch & NODE_ENV=development nodemon dist",
+    "lint": "eslint '*/**/*.ts' --quiet --fix",
+    "doc": "apidoc -i src/ - o doc/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxR522/test-node-2-api.git"
+  },
+  "keywords": [
+    "node.ts",
+    "express.ts",
+    "api",
+    "typescript",
+    "jest",
+    "apiDoc"
+  ],
+  "author": "Mario Randrianomearisoa <ranjamario@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaxR522/test-node-2-api/issues"
+  },
+  "homepage": "https://github.com/MaxR522/test-node-2-api#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.2",
+    "helmet": "^4.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.10",
+    "morgan": "^1.10.0",
+    "redis": "^3.1.2",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^16.10.3",
+    "@types/redis": "^2.8.32",
+    "eslint": "^8.0.0",
+    "nodemon": "^2.0.13",
+    "prettier": "^2.4.1",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.3"
+  }
+}
