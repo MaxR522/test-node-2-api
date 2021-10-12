@@ -6,7 +6,7 @@ interface IUser extends Document {
   email: string;
   password: string;
   dateOfBirth: Date;
-  gender: string;
+  gender: 'male' | 'female' | 'others';
 
   // login attempt limit
   attemptLogin: number;

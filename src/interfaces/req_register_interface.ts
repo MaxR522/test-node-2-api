@@ -3,8 +3,8 @@ interface IReqRegister {
   lastname: string;
   email: string;
   password: string;
-  dateOfBirth: Date;
-  gender: string;
+  date_naissance: Date;
+  sexe: 'male' | 'female' | 'others';
 }
 
 export default IReqRegister;

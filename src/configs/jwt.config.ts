@@ -13,7 +13,7 @@ const refreshTokenSecret: string =
 const accessTokenExpiry: string = process.env.ACCESS_TOKEN_EXPIRY || '24h';
 const refreshTokenExpiry: string = process.env.REFRESH_TOKEN_EXPIRY || '60d';
 
-export default {
+export {
   accessTokenSecret,
   refreshTokenSecret,
   accessTokenExpiry,
