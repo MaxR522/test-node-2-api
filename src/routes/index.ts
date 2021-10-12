@@ -1,9 +1,8 @@
 import * as Express from 'express';
+import authRoutes from './public/auth.routes';
 
 const router = Express.Router();
 
-router.get('/', (req: Express.Request, res: Express.Response) => {
-  return res.send('<h1>Hello World!</h1>');
-});
+router.use('/auth', authRoutes);
 
 export default router;
