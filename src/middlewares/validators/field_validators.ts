@@ -4,11 +4,10 @@
  *
  *****************************************************/
 
-import { body } from 'express-validator';
-import { ValidationChain } from 'express-validator';
+import { body, ValidationChain } from 'express-validator';
 // import Logger from '../config/winston';
 
-const fieldValidatorFor = (route: string): ValidationChain => {
+const fieldValidatorFor = (route: string): ValidationChain[] => {
   switch (route) {
     case 'register':
       return [
