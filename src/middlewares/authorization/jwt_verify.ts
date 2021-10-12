@@ -16,6 +16,8 @@ const JwtVerify = (req: Request, res: Response, next: NextFunction) => {
       }
 
       if (decoded) {
+        req.userData = decoded;
+        req.token = token;
         next();
       }
     });

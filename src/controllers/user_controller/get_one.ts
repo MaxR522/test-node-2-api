@@ -3,10 +3,10 @@ import IUser from '../../interfaces/user_interface';
 import User from '../../models/user';
 import genericError from '../../utils/generic_error';
 
-const GetOne = (req: Request, res: Response) => {
+const GetOne = (req: Request, res: Response): void => {
   const id: string = req.params.id;
 
-  User.findOne({ _id: id }, (error: any, user: IUser) => {
+  User.findOne({ _id: id }, (error: any, user: IUser): any => {
     if (error) {
       return genericError(res, error);
     }
