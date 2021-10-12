@@ -91,7 +91,12 @@ define({ "api": [
     },
     "filename": "src/apiDocs/auth.documentation.ts",
     "groupTitle": "Auth",
-    "name": "PostAuthLogin"
+    "name": "PostAuthLogin",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:7777/auth/login"
+      }
+    ]
   },
   {
     "type": "post",
@@ -137,7 +142,12 @@ define({ "api": [
     },
     "filename": "src/apiDocs/auth.documentation.ts",
     "groupTitle": "Auth",
-    "name": "PostAuthLogout"
+    "name": "PostAuthLogout",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:7777/auth/logout"
+      }
+    ]
   },
   {
     "type": "post",
@@ -259,7 +269,12 @@ define({ "api": [
     },
     "filename": "src/apiDocs/auth.documentation.ts",
     "groupTitle": "Auth",
-    "name": "PostAuthRegister"
+    "name": "PostAuthRegister",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:7777/auth/register"
+      }
+    ]
   },
   {
     "type": "get",
@@ -278,7 +293,12 @@ define({ "api": [
     },
     "filename": "src/apiDocs/error.documentation.ts",
     "groupTitle": "Error",
-    "name": "GetBlabla"
+    "name": "GetBlabla",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:7777/blabla"
+      }
+    ]
   },
   {
     "type": "get",
@@ -297,7 +317,12 @@ define({ "api": [
     },
     "filename": "src/apiDocs/error.documentation.ts",
     "groupTitle": "Error",
-    "name": "GetUsers"
+    "name": "GetUsers",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:7777/users"
+      }
+    ]
   },
   {
     "type": "get",
@@ -363,7 +388,12 @@ define({ "api": [
     },
     "filename": "src/apiDocs/user.documentation.ts",
     "groupTitle": "User",
-    "name": "GetUsers"
+    "name": "GetUsers",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:7777/users"
+      }
+    ]
   },
   {
     "type": "get",
@@ -429,7 +459,12 @@ define({ "api": [
     },
     "filename": "src/apiDocs/user.documentation.ts",
     "groupTitle": "User",
-    "name": "GetUsersId"
+    "name": "GetUsersId",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:7777/users/:id"
+      }
+    ]
   },
   {
     "type": "put",
@@ -536,7 +571,12 @@ define({ "api": [
     },
     "filename": "src/apiDocs/user.documentation.ts",
     "groupTitle": "User",
-    "name": "PutUsersId"
+    "name": "PutUsersId",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:7777/users/:id"
+      }
+    ]
   },
   {
     "type": "put",
@@ -629,6 +669,11 @@ define({ "api": [
     },
     "filename": "src/apiDocs/user.documentation.ts",
     "groupTitle": "User",
-    "name": "PutUsersIdPassword"
+    "name": "PutUsersIdPassword",
+    "sampleRequest": [
+      {
+        "url": "http://localhost:7777/users/:id/password"
+      }
+    ]
   }
 ] });
