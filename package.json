@@ -4,12 +4,12 @@
   "description": "a small api made with node.ts/express.ts",
   "main": "dist",
   "scripts": {
-    "start": "NODE_ENV=production npm start dist",
+    "start": "NODE_ENV=production node dist",
     "test": "NODE_ENV=test **test script goes here**",
     "build": "tsc --project ./tsconfig.json",
     "dev": "tsc --project ./tsconfig.json --watch & NODE_ENV=development nodemon dist",
     "lint": "eslint '*/**/*.ts' --quiet --fix",
-    "doc": "apidoc -i src/ - o doc/"
+    "doc": "apidoc -i src/ -o public/doc -v"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "express-csp-header": "^5.0.0",
     "express-validator": "^6.12.2",
     "helmet": "^4.6.0",
     "jsonwebtoken": "^8.5.1",

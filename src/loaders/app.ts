@@ -17,14 +17,23 @@ import { mongoOptions, mongoDBURI } from '../configs/mongo.config';
 
 const app = Express();
 
-// Middlewares
+/*****************************************************
+ *
+ *  Static
+ *
+ *****************************************************/
+
+app.use('/', Express.static('public'));
+
+/*****************************************************
+ *
+ *  Middlewares
+ *
+ *****************************************************/
 
 // body parser
 app.use(Express.json());
 app.use(Express.urlencoded({ extended: true }));
-
-// security
-app.use(helmet());
 
 // cross-origin
 app.use(cors(corsOption));
@@ -32,16 +41,14 @@ app.use(cors(corsOption));
 // middleware for log http request
 app.use(morganMiddleware);
 
+// security
+app.use(helmet());
+
 /*****************************************************
  *
  *  Routes
  *
  *****************************************************/
-
-// Load static files
-app.use('/', Express.static('public'));
-
-app.use('/docs', Express.static('doc'));
 
 // load router
 app.use(router);
