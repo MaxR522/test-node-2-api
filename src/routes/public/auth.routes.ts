@@ -1,7 +1,7 @@
 import * as Express from 'express';
 
-import Register from '../../controller/user_controller/auth/register';
-import Login from '../../controller/user_controller/auth/login';
+import Register from '../../controllers/user_controller/auth/register';
+import Login from '../../controllers/user_controller/auth/login';
 
 import fieldValidatorFor from '../../middlewares/validators/field_validators';
 import checkValidationResult from '../../middlewares/validators/check_field_validators';
