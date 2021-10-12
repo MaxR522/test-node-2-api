@@ -1,7 +1,14 @@
-import { body, cookie, header } from 'express-validator';
+/*****************************************************
+ *
+ *  This file contains middlewares to check if field validity
+ *
+ *****************************************************/
+
+import { body } from 'express-validator';
+import { ValidationChain } from 'express-validator';
 // import Logger from '../config/winston';
 
-const fieldValidatorFor = (route: string) => {
+const fieldValidatorFor = (route: string): ValidationChain => {
   switch (route) {
     case 'register':
       return [

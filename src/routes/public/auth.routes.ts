@@ -1,3 +1,9 @@
+/*****************************************************
+ *
+ *  This file contains public routes
+ *
+ *****************************************************/
+
 import * as Express from 'express';
 
 import Register from '../../controllers/user_controller/auth/register';

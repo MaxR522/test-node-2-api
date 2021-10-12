@@ -1,3 +1,14 @@
+/*****************************************************
+ *
+ *  This file contains update password user logics:
+ * - Extract inside query params the Id of the user
+ * - get the ID of the connected user inside the payload of the decoded JWT (if JWT valid)
+ * - verify if the user update his own password (block if not)
+ * - check his current password if valid (compare it with the hashed stored inside DB)
+ * - if everything is OK, change his password
+ *
+ *****************************************************/
+
 import { Request, Response } from 'express';
 import User from '../../models/user';
 import genericError from '../../utils/generic_error';
@@ -6,10 +17,9 @@ import IPayload from '../../interfaces/payload_interface';
 import * as bcrypt from 'bcrypt';
 
 /**
- * To change user's password, the user need to :
- * - provide his current password & the new password
- * - Then we check if the current password is valid (match with the hashed stored)
- * - if valid, change his password
+ *
+ * @param req Request
+ * @param res Response
  */
 
 const UpdateUserPassword = (req: Request, res: Response): any => {

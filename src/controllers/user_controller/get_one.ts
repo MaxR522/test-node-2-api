@@ -1,7 +1,21 @@
+/*****************************************************
+ *
+ *  This file contains get one users logics:
+ * - extract user's Id inside query params
+ * - Query by this extracted id inside mongoDB one user by using mongoose method
+ *
+ *****************************************************/
+
 import { Request, Response } from 'express';
 import IUser from '../../interfaces/user_interface';
 import User from '../../models/user';
 import genericError from '../../utils/generic_error';
+
+/**
+ *
+ * @param req Request
+ * @param res Response
+ */
 
 const GetOne = (req: Request, res: Response): void => {
   const id: string = req.params.id;

@@ -1,9 +1,15 @@
+/*****************************************************
+ *
+ *  This file contains middlewares to check the result of field_validators and display if there is some the errors
+ *
+ *****************************************************/
+
 import { validationResult } from 'express-validator';
 import { Request, Response } from 'express';
 import Logger from '../../loaders/winston';
 
-const checkValidationResult = (req: Request, res: Response, next: any) => {
-  const errors = validationResult(req);
+const checkValidationResult = (req: Request, res: Response, next: any): any => {
+  const errors: any = validationResult(req);
 
   if (!errors.isEmpty()) {
     // To check if some params is blank

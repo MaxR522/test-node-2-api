@@ -1,6 +1,6 @@
 /*****************************************************
  *
- *  This file contains cors config
+ *  This file contains variables config for cors
  *
  *****************************************************/
 

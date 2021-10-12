@@ -1,3 +1,11 @@
+/*****************************************************
+ *
+ *  This file contains login logics:
+ * - check if user exists
+ * - generate tokens if no error occurs
+ *
+ *****************************************************/
+
 import { Request, Response } from 'express';
 import IPayload from '../../../interfaces/payload_interface';
 import IUser from '../../../interfaces/user_interface';
@@ -13,6 +21,12 @@ import {
   refreshTokenExpiry,
 } from '../../../configs/jwt.config';
 import Logger from '../../../loaders/winston';
+
+/**
+ *
+ * @param req Request
+ * @param res Response
+ */
 
 const Login = (req: Request, res: Response): void => {
   const { email, password }: IReqLogin = req.body;

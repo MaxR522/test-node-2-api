@@ -1,3 +1,9 @@
+/*****************************************************
+ *
+ *  This file contains User model
+ *
+ *****************************************************/
+
 import * as mongoose from 'mongoose';
 import IUser from '../interfaces/user_interface';
 import * as bcrypt from 'bcrypt';

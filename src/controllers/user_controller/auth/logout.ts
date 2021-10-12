@@ -1,3 +1,11 @@
+/*****************************************************
+ *
+ *  This file contains logout logics:
+ * - Revoke access-token by adding it inside BlacklistToken
+ * - When performing action, check if the access-token is already revoked
+ *
+ *****************************************************/
+
 import { Request, Response } from 'express';
 import Logger from '../../../loaders/winston';
 import genericError from '../../../utils/generic_error';
@@ -5,10 +13,9 @@ import BlacklistToken from '../../../models/blacklist_token';
 import IBlacklistToken from '../../../interfaces/blacklist_token_interface';
 
 /**
- * Logout flow:
- * Revoke access-token by adding it inside BlacklistToken
  *
- * When performing action, check if the access-token is already revoked
+ * @param req Request
+ * @param res Response
  */
 
 const Logout = (req: Request, res: Response): void => {

@@ -1,3 +1,9 @@
+/*****************************************************
+ *
+ *  This file contains interface for types declaration of register request
+ *
+ *****************************************************/
+
 interface IReqRegister {
   firstname: string;
   lastname: string;

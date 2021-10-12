@@ -1,3 +1,9 @@
+/*****************************************************
+ *
+ *  This file contains protected routes
+ *
+ *****************************************************/
+
 import * as Express from 'express';
 import GetOne from '../../controllers/user_controller/get_one';
 import GetAllUsers from '../../controllers/user_controller/get_all';

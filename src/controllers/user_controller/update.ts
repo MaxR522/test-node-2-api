@@ -1,9 +1,25 @@
+/*****************************************************
+ *
+ *  This file contains update user logics:
+ * - Extract inside query params the Id of the user
+ * - get the ID of the connected user inside the payload of the decoded JWT (if JWT valid)
+ * - verify if the user update his own information (block if not)
+ * - if everything is OK, update his info
+ *
+ *****************************************************/
+
 import { Request, Response } from 'express';
 import User from '../../models/user';
 import genericError from '../../utils/generic_error';
 import IUser from '../../interfaces/user_interface';
 import IUpdateReq from '../../interfaces/update_user_interface';
 import IPayload from '../../interfaces/payload_interface';
+
+/**
+ *
+ * @param req Request
+ * @param res Response
+ */
 
 const UpdateUser = (req: Request, res: Response): any => {
   // req.userData store the decoded data (payload) from VerifyJWT method

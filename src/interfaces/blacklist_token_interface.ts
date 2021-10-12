@@ -1,3 +1,9 @@
+/*****************************************************
+ *
+ *  This file contains BlacklistToken interface for type
+ *
+ *****************************************************/
+
 import { Document } from 'mongoose';
 
 interface IBlacklistToken extends Document {

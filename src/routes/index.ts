@@ -1,3 +1,9 @@
+/*****************************************************
+ *
+ *  This file group all routes
+ *
+ *****************************************************/
+
 import * as Express from 'express';
 import authRoutes from './public/auth.routes';
 import userprotectedRoutes from './protected/user.routes';

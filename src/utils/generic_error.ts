@@ -1,6 +1,8 @@
-/**
- * DRY all 400 generic error
- */
+/*****************************************************
+ *
+ *  This file DRY error 400
+ *
+ *****************************************************/
 
 import { Response } from 'express';
 import Logger from '../loaders/winston';

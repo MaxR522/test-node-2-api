@@ -1,8 +1,21 @@
+/*****************************************************
+ *
+ *  This file contains middlewares to check if the token is already blacklisted or not
+ *  token blacklisted means token is invalid
+ *
+ *****************************************************/
+
 import { Request, Response, NextFunction } from 'express';
 import BlacklistToken from '../../models/blacklist_token';
 import IBlacklistToken from '../../interfaces/blacklist_token_interface';
 import genericError from '../../utils/generic_error';
 
+/**
+ *
+ * @param req Request
+ * @param res Response
+ * @param next NextFunction
+ */
 const checkBlacklistToken = (
   req: Request,
   res: Response,
@@ -19,6 +32,7 @@ const checkBlacklistToken = (
         return genericError(res, error);
       }
 
+      // if token blacklisted
       if (token) {
         return res.status(401).json({
           error: true,

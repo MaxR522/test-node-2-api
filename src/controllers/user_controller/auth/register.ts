@@ -1,3 +1,11 @@
+/*****************************************************
+ *
+ *  This file contains register logics:
+ * - store the user (contained inside the body of the request)
+ * - and generate tokens if no error occurs
+ *
+ *****************************************************/
+
 import { Request, Response } from 'express';
 import IReqRegister from '../../../interfaces/req_register_interface';
 import IUser from '../../../interfaces/user_interface';
@@ -15,8 +23,8 @@ import Logger from '../../../loaders/winston';
 
 /**
  *
- * @param req
- * @param res
+ * @param req Request
+ * @param res Response
  */
 
 const Register = (req: Request, res: Response): void => {

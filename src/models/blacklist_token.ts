@@ -1,3 +1,9 @@
+/*****************************************************
+ *
+ *  This file contains BlacklistToken model
+ *
+ *****************************************************/
+
 import * as mongoose from 'mongoose';
 import IBlacklistToken from '../interfaces/blacklist_token_interface';
 

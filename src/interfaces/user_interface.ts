@@ -1,3 +1,9 @@
+/*****************************************************
+ *
+ *  This file contains interface for types declaration of User
+ *
+ *****************************************************/
+
 import { Document } from 'mongoose';
 
 interface IUser extends Document {

@@ -1,6 +1,8 @@
-/**
- * This file load configs for running the app from .env
- */
+/*****************************************************
+ *
+ *  This file load configs for running the app from .env
+ *
+ *****************************************************/
 
 require('dotenv').config();
 
