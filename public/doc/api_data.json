@@ -91,12 +91,7 @@
     },
     "filename": "src/apiDocs/auth.documentation.ts",
     "groupTitle": "Auth",
-    "name": "PostAuthLogin",
-    "sampleRequest": [
-      {
-        "url": "http://localhost:7777/auth/login"
-      }
-    ]
+    "name": "PostAuthLogin"
   },
   {
     "type": "post",
@@ -142,12 +137,7 @@
     },
     "filename": "src/apiDocs/auth.documentation.ts",
     "groupTitle": "Auth",
-    "name": "PostAuthLogout",
-    "sampleRequest": [
-      {
-        "url": "http://localhost:7777/auth/logout"
-      }
-    ]
+    "name": "PostAuthLogout"
   },
   {
     "type": "post",
@@ -269,12 +259,7 @@
     },
     "filename": "src/apiDocs/auth.documentation.ts",
     "groupTitle": "Auth",
-    "name": "PostAuthRegister",
-    "sampleRequest": [
-      {
-        "url": "http://localhost:7777/auth/register"
-      }
-    ]
+    "name": "PostAuthRegister"
   },
   {
     "type": "get",
@@ -293,12 +278,7 @@
     },
     "filename": "src/apiDocs/error.documentation.ts",
     "groupTitle": "Error",
-    "name": "GetBlabla",
-    "sampleRequest": [
-      {
-        "url": "http://localhost:7777/blabla"
-      }
-    ]
+    "name": "GetBlabla"
   },
   {
     "type": "get",
@@ -317,12 +297,7 @@
     },
     "filename": "src/apiDocs/error.documentation.ts",
     "groupTitle": "Error",
-    "name": "GetUsers",
-    "sampleRequest": [
-      {
-        "url": "http://localhost:7777/users"
-      }
-    ]
+    "name": "GetUsers"
   },
   {
     "type": "get",
@@ -388,12 +363,7 @@
     },
     "filename": "src/apiDocs/user.documentation.ts",
     "groupTitle": "User",
-    "name": "GetUsers",
-    "sampleRequest": [
-      {
-        "url": "http://localhost:7777/users"
-      }
-    ]
+    "name": "GetUsers"
   },
   {
     "type": "get",
@@ -459,12 +429,7 @@
     },
     "filename": "src/apiDocs/user.documentation.ts",
     "groupTitle": "User",
-    "name": "GetUsersId",
-    "sampleRequest": [
-      {
-        "url": "http://localhost:7777/users/:id"
-      }
-    ]
+    "name": "GetUsersId"
   },
   {
     "type": "put",
@@ -571,12 +536,7 @@
     },
     "filename": "src/apiDocs/user.documentation.ts",
     "groupTitle": "User",
-    "name": "PutUsersId",
-    "sampleRequest": [
-      {
-        "url": "http://localhost:7777/users/:id"
-      }
-    ]
+    "name": "PutUsersId"
   },
   {
     "type": "put",
@@ -669,11 +629,6 @@
     },
     "filename": "src/apiDocs/user.documentation.ts",
     "groupTitle": "User",
-    "name": "PutUsersIdPassword",
-    "sampleRequest": [
-      {
-        "url": "http://localhost:7777/users/:id/password"
-      }
-    ]
+    "name": "PutUsersIdPassword"
   }
 ]
