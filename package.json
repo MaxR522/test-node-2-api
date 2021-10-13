@@ -4,7 +4,7 @@
   "description": "a small api made with node.ts/express.ts",
   "main": "dist",
   "scripts": {
-    "start": "NODE_ENV=production node dist",
+    "start": "NODE_ENV=production pm2 start dist",
     "test": "NODE_ENV=test jest",
     "build": "tsc --project ./tsconfig.json",
     "dev": "tsc --project ./tsconfig.json --watch & NODE_ENV=development nodemon dist",
@@ -40,6 +40,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.10",
     "morgan": "^1.10.0",
+    "pm2": "^5.1.2",
     "redis": "^3.1.2",
     "winston": "^3.3.3"
   },
