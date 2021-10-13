@@ -94,7 +94,7 @@
     "name": "PostAuthLogin",
     "sampleRequest": [
       {
-        "url": "http://localhost:7777/auth/login"
+        "url": "https://api-node-mario.herokuapp.com/auth/login"
       }
     ]
   },
@@ -145,7 +145,7 @@
     "name": "PostAuthLogout",
     "sampleRequest": [
       {
-        "url": "http://localhost:7777/auth/logout"
+        "url": "https://api-node-mario.herokuapp.com/auth/logout"
       }
     ]
   },
@@ -272,7 +272,7 @@
     "name": "PostAuthRegister",
     "sampleRequest": [
       {
-        "url": "http://localhost:7777/auth/register"
+        "url": "https://api-node-mario.herokuapp.com/auth/register"
       }
     ]
   },
@@ -296,7 +296,7 @@
     "name": "GetBlabla",
     "sampleRequest": [
       {
-        "url": "http://localhost:7777/blabla"
+        "url": "https://api-node-mario.herokuapp.com/blabla"
       }
     ]
   },
@@ -320,7 +320,7 @@
     "name": "GetUsers",
     "sampleRequest": [
       {
-        "url": "http://localhost:7777/users"
+        "url": "https://api-node-mario.herokuapp.com/users"
       }
     ]
   },
@@ -391,7 +391,7 @@
     "name": "GetUsers",
     "sampleRequest": [
       {
-        "url": "http://localhost:7777/users"
+        "url": "https://api-node-mario.herokuapp.com/users"
       }
     ]
   },
@@ -462,7 +462,7 @@
     "name": "GetUsersId",
     "sampleRequest": [
       {
-        "url": "http://localhost:7777/users/:id"
+        "url": "https://api-node-mario.herokuapp.com/users/:id"
       }
     ]
   },
@@ -574,7 +574,7 @@
     "name": "PutUsersId",
     "sampleRequest": [
       {
-        "url": "http://localhost:7777/users/:id"
+        "url": "https://api-node-mario.herokuapp.com/users/:id"
       }
     ]
   },
@@ -672,7 +672,7 @@
     "name": "PutUsersIdPassword",
     "sampleRequest": [
       {
-        "url": "http://localhost:7777/users/:id/password"
+        "url": "https://api-node-mario.herokuapp.com/users/:id/password"
       }
     ]
   }
