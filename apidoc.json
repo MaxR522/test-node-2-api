@@ -2,7 +2,7 @@
   "name": "Node, express typescript api",
   "version": "1.0.0",
   "description": "It's a small API made with node typescript",
-  "url": "http://localhost:7777",
-  "sampleUrl": "http://localhost:7777",
+  "url": "https://api-node-mario.herokuapp.com",
+  "sampleUrl": "https://api-node-mario.herokuapp.com",
   "template": { "forceLanguage": "en" }
 }
