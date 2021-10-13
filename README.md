@@ -4,6 +4,9 @@ RESTful API based on ExpressTs.
 
 ![NodeJs](https://img.shields.io/badge/node.js-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white) ![ExpressJs](https://img.shields.io/badge/express.js-%23404d59.svg?&style=for-the-badge) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?&style=for-the-badge&logo=mongodb&logoColor=white)
 
+This app is hosted on Heroku at this address: https://api-node-mario.herokuapp.com/
+The Database is hosted at MongoDB atlas
+
 ## Prerequisite
 
 - node js version >= 14.xx.x
