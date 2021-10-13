@@ -4,10 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Accueil</title>
   </head>
   <body>
-    <h1>Hello World</h1>
-    <a href="/doc/index.html">documentation</a>
+    <nav class="nav-top">
+      <span class="nav__logo">Mario</span>
+      <ul class="nav__menu">
+        <li class="nav__menu__items items-1"><a href="/">Home</a></li>
+        <li class="nav__menu__items items-2">
+          <a
+            href="https://www.linkedin.com/in/mario-randrianomearisoa/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >About me</a
+          >
+        </li>
+        <li class="nav__menu__items items-3">
+          <a href="/doc/index.html">documentation</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main-page">
+      <section class="main__section">
+        <h1 class="main__title">Hello World!</h1>
+        <p class="main__description">
+          It's a small API made with node.js with his framework express. Instead
+          of using regular Javascript, I used Typescript to avoid TypeError
+        </p>
+        <a class="main_btn" href="/doc/index.html">Getting started</a>
+      </section>
+      <!-- <section class="main__section">
+        <h1>API</h1>
+      </section> -->
+    </main>
+    <footer class="footer-page">
+      <div class="footer__container">
+        <p class="footer__text">Build with <span>&#128150;</span> by Mario</p>
+      </div>
+    </footer>
   </body>
 </html>
