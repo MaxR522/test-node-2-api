@@ -4,7 +4,7 @@
   "description": "a small api made with node.ts/express.ts",
   "main": "dist",
   "scripts": {
-    "start": "NODE_ENV=production pm2 start dist",
+    "start": "NODE_ENV=production node dist",
     "test": "NODE_ENV=test jest",
     "build": "tsc --project ./tsconfig.json",
     "dev": "tsc --project ./tsconfig.json --watch & NODE_ENV=development nodemon dist",
