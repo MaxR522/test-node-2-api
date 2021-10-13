@@ -1,0 +1,1 @@
+{"version":3,"file":"morgan.js","sourceRoot":"","sources":["../../src/loaders/morgan.ts"],"names":[],"mappings":";;AAMA,iCAAiC;AACjC,uCAA+B;AAE/B,MAAM,MAAM,GAAyB;IAEnC,KAAK,EAAE,CAAC,OAAO,EAAE,EAAE,CAAC,iBAAM,CAAC,IAAI,CAAC,OAAO,CAAC;CACzC,CAAC;AAGF,MAAM,gBAAgB,GAAG,MAAM,CAK7B,mFAAmF,EAGnF,EAAE,MAAM,EAAE,CACX,CAAC;AAEF,kBAAe,gBAAgB,CAAC"}
